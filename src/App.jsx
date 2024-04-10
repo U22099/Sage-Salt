@@ -1,33 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Footer from './Components/Footer'
+import Main from './Components/Main'
+import Carts from './Components/Carts'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
+import Header from './Components/Header'
+import {Route, Routes} from 'react-router-dom'
+import {useState} from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState([])
+  function foodCounter(x){
+    setCount([...count, x]);
+  }
+  function foodRemove(x){
+    setCount(count.filter((_, i) => i != x));
+    count.map(food=>console.log(food));
+    console.log(x);
+    console.log("new");
+  }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header count={count}/>
+      <div className="py-[90px]">
+          <Routes>
+            <Route path="/SageSalt/" element={<Main callBack={foodCounter}/>}/>
+            <Route path="/SageSalt/cart" element={<Carts callBackRemove={foodRemove} count={count}/>}/>
+            <Route path="/SageSalt/login" element={<Login/>}/>
+            <Route path="/SageSalt/signup" element={<Signup/>}/>
+          </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
     </>
   )
 }
