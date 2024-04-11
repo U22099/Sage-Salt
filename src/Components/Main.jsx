@@ -104,16 +104,16 @@ function Main(props){
                 }
             }}
             className="w-[90vw] flex flex-col md:flex-row gap-[15px] mx-[auto] h-[360px] justify-between items-center">
-                <div className="rounded-md w-[100%] h-[100%] grid overflow-hidden">
-                    <img src={img1} className="w-[100%] h-[100%]"/>
-                    <div id="inputcard" className="z-1 relative w-max top-[-170px] md:top-[-300px] left-[20px] md:left-[99px] bg-white p-[20px] flex flex-col md:flex-row justify-between items-center rounded-lg gap-[20px]">
-                        <input id="input" onChange={resetFood} type="text" className="rounded-lg w-[200px] md:w-[230px] p-[10px] shadow-[5px_5px_5px_3px_rgba(0,0,0,0.8)] bg-white text-gray-700" placeholder="Search for Foods"/>
+                <div className="rounded-md flex justify-center relative items-center w-[100%] h-[100%] overflow-hidden">
+                    <img src={img1} className="w-[100%] absolute h-[100%]"/>
+                    <div id="inputcard" className="z-[1] bg-white w-[80%] p-[20px] flex flex-col md:flex-row justify-between items-center rounded-lg gap-[20px]">
+                        <input id="input" onChange={resetFood} type="text" className="rounded-lg w-[90%] p-[10px] shadow-[5px_5px_5px_3px_rgba(0,0,0,0.8)] bg-white text-gray-700" placeholder="Search for Foods"/>
                         <button onClick={updateFood} className="rounded w-[100px] h-[30px] flex justify-center items-center bg-primary-color text-white">Find</button>
                     </div>
                 </div>
-                <div className="rounded-md grid overflow-hidden w-[100%] h-[100%]">
-                    <img src={img2} className="w-[100%] h-[100%] "/>
-                    <img src={logo} className="z-1 relative top-[-170px] md:top-[-320px] left-[10px] md:left-[160px] w-[300px]"/>
+                <div className="rounded-md flex justify-center relative items-center overflow-hidden w-[100%] h-[100%]">
+                    <img src={img2} className="w-[100%] absolute h-[100%] "/>
+                    <img src={logo} className="z-[1] md:left-[160px] w-[80%]"/>
                 </div>
             </motion.div>
             <motion.h1 

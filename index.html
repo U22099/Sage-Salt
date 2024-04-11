@@ -9,5 +9,17 @@
   <body>
     <div id="root" class="overflow-x-hidden"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- <script>
+    window.onload = ()=>{
+      console.log("called");
+      let body = document.getElementsByTagName("BODY")[0];
+      let loader = document.querySelector("#loader");
+      body.style.overflow = "hidden";
+      setTimeout(()=>{
+          body.style.overflow = "auto";
+          loader.style.visibility = "hidden";
+      }, 3000);
+  };
+    </script> -->
   </body>
 </html>

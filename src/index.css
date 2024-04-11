@@ -10,10 +10,10 @@ body{
   color: white;
 }
 .bg-primary-color{
-  background: linear-gradient(to right, #f37a48, #e34a27);
+  background: linear-gradient(to right, orange, #e34a27);
 }
 .primary-color{
-  background: linear-gradient(to right, #f37a48, #e34a27);
+  background: linear-gradient(to right, orange, #e34a27);
   -webkit-background-clip: text;
   color: transparent;
 }
