@@ -22,10 +22,10 @@ function App() {
       <Header count={count}/>
       <div className="py-[90px]">
           <Routes>
-            <Route path="/SageSalt/" element={<Main callBack={foodCounter}/>}/>
-            <Route path="/SageSalt/cart" element={<Carts callBackRemove={foodRemove} count={count}/>}/>
-            <Route path="/SageSalt/login" element={<Login/>}/>
-            <Route path="/SageSalt/signup" element={<Signup/>}/>
+            <Route path="/Sage-Salt/" element={<Main callBack={foodCounter}/>}/>
+            <Route path="/Sage-Salt/cart" element={<Carts callBackRemove={foodRemove} count={count}/>}/>
+            <Route path="/Sage-Salt/login" element={<Login/>}/>
+            <Route path="/Sage-Salt/signup" element={<Signup/>}/>
           </Routes>
       </div>
       <Footer/>

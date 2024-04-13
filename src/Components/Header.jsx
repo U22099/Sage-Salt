@@ -31,18 +31,18 @@ function Header(props) {
   return (
     <div>
         <div id="navbar" className="z-[5] h-[60px] w-[100%] bg-white fixed mb-[40px] flex justify-between">
-            <Link to="/SageSalt/">
+            <Link to="/Sage-Salt/">
               <h1 className="flex w-max justify-start items-center px-[20px] text-bold  primary-color text-[2em]">Sage 'n' Salt</h1>
             </Link>
             <div className="hidden w-[100%] md:flex justify-end items-center gap-[20px] pr-[20px]">
                 <ul id="ul" className="text-gray-700 flex gap-[10px]">
-                    <li><Link to="/SageSalt/">Home</Link></li>
+                    <li><Link to="/Sage-Salt/">Home</Link></li>
                     <li><a href="#food">Food</a></li>
                     <li><a href="#dwnload">Download</a></li>
                 </ul>
-                <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg" to="/SageSalt/login">Log In</Link>
-                <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg"  to="/SageSalt/signup">Sign Up</Link>
-                <Link to="/SageSalt/cart">
+                <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg" to="/Sage-Salt/login">Log In</Link>
+                <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg"  to="/Sage-Salt/signup">Sign Up</Link>
+                <Link to="/Sage-Salt/cart">
                   <FaCartShopping className="bg-primary-color rounded-md text-white text-[2.5em] p-[7px]"/>
                   <p id="tag" className={(props.count.length!==0) ? "text-[0.8em] w-[20px] h-[20px] flex justify-center items-center bg-black text-white rounded-[50%] p-[5px] absolute top-[0px]": "hidden"}>{props.count.length}</p>
                 </Link>
@@ -63,13 +63,13 @@ function Header(props) {
         id="sidenavbar"
         className={nav ? "flex flex-col fixed bg-white h-[100vh] w-[60vw] gap-[20px] p-[20px] z-[2] md:hidden" : "hidden"}>
             <ul className="text-[orangered] mt-[30px] text-[1.5em] text-bold flex flex-col gap-[10px]">
-                <li><Link to="/SageSalt/" onClick={revertNav}>Home</Link></li>
+                <li><Link to="/Sage-Salt/" onClick={revertNav}>Home</Link></li>
                 <li><a href="#food" onClick={revertNav}>Food</a></li>
                 <li><a href="#dwnload" onClick={revertNav}>Download</a></li>
             </ul>
-            <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center bg-primary-color text-white rounded-lg" to="/SageSalt/login" onClick={revertNav}>Log In</Link>
-            <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg"  to="/SageSalt/signup" onClick={revertNav}>Sign Up</Link>
-            <Link to="/SageSalt/cart">
+            <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center bg-primary-color text-white rounded-lg" to="/Sage-Salt/login" onClick={revertNav}>Log In</Link>
+            <Link className="w-[100px] h-[30px] text-[1.2em] flex justify-center items-center bg-primary-color text-white rounded-lg"  to="/Sage-Salt/signup" onClick={revertNav}>Sign Up</Link>
+            <Link to="/Sage-Salt/cart">
               <h1 className="text-[1.5em] primary-color ml-[10px]" onClick={revertNav}><FaCartShopping className="bg-primary-color rounded-md text-white text-[2.5em] p-[7px]"/>Shopping Cart</h1>
               <p id="tag" className={(props.count.length!==0) ? "text-[0.8em] w-[20px] h-[20px] flex justify-center items-center bg-black text-white rounded-[50%] p-[5px] absolute top-[46%]": "hidden"}>{props.count.length}</p>
             </Link>
