@@ -15,12 +15,12 @@ function Card(props){
     return(
         <motion.div 
         initial={{
-            x: -150,
+            x: -250,
         }}
         whileInView={{
             x: 0,
             transition: {
-                duration: 0.5,
+                duration: 0.3,
             }
         }}
         viewport={{
