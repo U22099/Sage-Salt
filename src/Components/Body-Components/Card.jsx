@@ -21,6 +21,9 @@ function Card(props){
         whileInView={{
             x: 0,
             opacity: 1,
+            transition: {
+                duration: 1,
+            }
         }}
         viewport={{
             once: true,
