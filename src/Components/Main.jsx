@@ -118,13 +118,12 @@ function Main(props){
             </motion.div>
             <motion.h1 
             initial={{
+                x: 100,
                 opacity: 0,
             }}
             whileInView={{
+                x: 0,
                 opacity: 1,
-                transition: {
-                    duration: 1,
-                }
             }}
             id="food" className="mt-[30px] w-[90vw] mx-auto primary-color text-[2em]">Foods:</motion.h1>
             <div className="flex flex-col mt-[30px]">
