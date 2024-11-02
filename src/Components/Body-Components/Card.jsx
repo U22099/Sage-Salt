@@ -19,7 +19,7 @@ function Card(props){
             opacity: 0,
         }}
         whileInView={{
-            x: -100,
+            x: 100,
             opacity: 1,
         }}
         viewport={{
